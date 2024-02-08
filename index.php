@@ -179,7 +179,7 @@ foreach ($releases as $release) {
 
                 <div class="row clearfix">
 
-                    <div class="col-3">
+                    <div class="col-1">
                         <div class="section-heading">
                             <h3>Über mich</h3>
                             <h2 class="section-title">Wer bin ich?</h2>
@@ -205,18 +205,32 @@ foreach ($releases as $release) {
                         <h3>SONGS</h3>
                         <h2 class="section-title">Hier sind meine Releases!</h2>
                     </div>
-                    <!--Gallery / Hier kommen die Songs rein Manu ;)-->
-                    <?php
-                    foreach ($releases as $release) {
-                    $image = $release["image_src"];
-                    $services = $scrapper->getRelease($release["key"]);
-                    ?>
-                    <a onclick='openModal(<?php echo json_encode($release);?>, <?php echo json_encode($services);?>)' id="modal-closed">
-                        <img src="https://music.imusician.pro<?php echo $image; ?>" />
-                    </a>
-                    <?php
-                    }
-                    ?>
+                    <div id="image-slider-01" class="splide" style="height: 50vh; width: auto;">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+
+                                <!--Gallery / Hier kommen die Songs rein Manu ;)-->
+                                <?php
+                                foreach ($releases as $release) {
+                                $image = $release["image_src"];
+                                $services = $scrapper->getRelease($release["key"]);
+                                ?>
+
+                                <li class="splide__slide">
+                                    <a onclick='openModal(<?php echo json_encode($release);?>, <?php echo json_encode($services);?>)' id="modal-closed">
+                                        <img src="https://music.imusician.pro<?php echo $image; ?>" />
+                                    </a>
+                                </li>
+                                
+
+
+                                
+                                <?php
+                                }
+                                ?>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </aside>
             <!--End of Gallery-->
@@ -287,7 +301,7 @@ foreach ($releases as $release) {
                         <h2 class="section-title">Meine kleinen Erfolge</h2>
                     </div>
 
-                    <div id="image-slider" class="splide" style="height: 50vh; width: auto;">
+                    <div id="image-slider-02" class="splide" style="height: 50vh; width: auto;">
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
@@ -315,9 +329,10 @@ foreach ($releases as $release) {
         <!--End Main Content Area-->
         <!--Footer-->
         <footer id="landing-footer" class="clearfix">
-            <div class="row clearfix">
+            <div style="display: flex; align-items: center;">
 
                 <p id="copyright" class="col-2">Made with love by Manuel & Sebastian ;)</a></p>
+                <img src="images/logo-2.png" style="width: 50px;"/>
 
                 <!--Social Icons in Footer-->
                 <ul class="social-icons">
@@ -411,6 +426,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        new Splide('#image-slider').mount();
+        new Splide('#image-slider-01').mount();
+        new Splide('#image-slider-02').mount();
     });
 </script>

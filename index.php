@@ -129,7 +129,7 @@ foreach ($releases as $release) {
                                     <a href="#gallery">Songs</a>
                                 </li>
                                 <li>
-                                    <a href="#test">Bewertungen</a>
+                                    <a href="#erfolge">Erfolge</a>
                                 </li>
                             </ul>
                         </nav>
@@ -236,7 +236,7 @@ foreach ($releases as $release) {
 
                     <br><br><br>
                     <div style="display: flex; justify-content: center;">
-                        <a arget="_blank" class="modal__btn" href="" id="deezer">
+                        <a target="_blank" class="modal__btn" href="" id="deezer">
                             <svg class="css-1vp3f8h e13waqcv0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 24"><path d="M37.23 9.26c1.32 0 2.39.63 2.96 1.6V5h2.52v13.8h-2.43v-1.34A3.4 3.4 0 0 1 37.3 19c-2.64 0-4.49-1.93-4.49-4.83 0-2.94 1.87-4.91 4.43-4.91Zm-1.91 4.92c0 1.65 1.08 2.68 2.48 2.68 1.36 0 2.48-1.03 2.48-2.68 0-1.68-1.12-2.74-2.48-2.74-1.4 0-2.48 1.06-2.48 2.74Zm22.33 2.65c-1.34 0-2.44-.8-2.46-2.23h6.35c.08-.37.12-.76.12-1.14 0-2.57-1.75-4.2-4.33-4.2-2.76 0-4.65 2.15-4.65 4.8A4.7 4.7 0 0 0 57.62 19c2.19 0 3.7-1.1 4.36-2.92l-2.16-.84c-.3 1.06-1.02 1.6-2.17 1.6Zm-.33-5.54c1.12 0 1.89.61 1.89 1.56l-.02.08h-4a2.1 2.1 0 0 1 2.13-1.64Z"></path><path d="M27.2 9.45h3.08v1.8H27.2v-1.8Zm0 2.51h3.08v1.8H27.2v-1.8Zm3.08 2.51H27.2v1.8h3.1v-1.8ZM16 17h3.09v1.8H16V17Zm6.82 0h-3.09v1.8h3.09V17Zm.64 0h3.1v1.8h-3.1V17Zm6.82 0H27.2v1.8h3.1V17Zm-6.82-2.51h3.1v1.8h-3.1v-1.8Zm-.64 0h-3.09v1.8h3.09v-1.8Zm-3.09-2.52h3.09v1.8h-3.09v-1.8Zm50.64-2.5v2.07l-5.14 5h5.28v2.27h-8.43v-2.17l5.12-5h-4.96V9.45h8.13Zm15.19 3.01c0 .16-.01.32-.03.47h2.39c.05-.3.08-.61.08-.92 0-1.6-1-2.76-2.68-2.76-1.08 0-1.85.53-2.24 1.4v-1.2h-2.52v9.34h2.52V12.8c0-.95.51-1.48 1.3-1.48.7 0 1.18.47 1.18 1.16Z"></path><path d="M75.6 16.83c-1.34 0-2.44-.8-2.46-2.23h6.35a5.25 5.25 0 0 0 .12-1.14c0-2.57-1.75-4.2-4.33-4.2-2.76 0-4.65 2.15-4.65 4.8A4.7 4.7 0 0 0 75.57 19c2.19 0 3.7-1.1 4.36-2.92l-2.16-.84c-.3 1.06-1.02 1.6-2.17 1.6Zm-.33-5.54c1.12 0 1.89.61 1.89 1.56l-.02.08h-4a2.1 2.1 0 0 1 2.13-1.64ZM45.89 14.6c.02 1.42 1.12 2.23 2.46 2.23 1.14 0 1.87-.53 2.16-1.6l2.15.85C52.01 17.9 50.5 19 48.31 19a4.7 4.7 0 0 1-4.94-4.93c0-2.66 1.89-4.81 4.65-4.81 2.57 0 4.33 1.64 4.33 4.2a5.18 5.18 0 0 1-.12 1.14h-6.34Zm4.01-1.75c0-.95-.77-1.56-1.89-1.56a2.1 2.1 0 0 0-2.12 1.64h4l.01-.08Z"></path></svg>
                         </a>
                     </div>
@@ -278,27 +278,34 @@ foreach ($releases as $release) {
 
 
             <!--Testimonials-->
-            <aside id="test" class="scrollto  clearfix text-center" data-enllax-ratio=".3">
+            <aside id="erfolge" class="scrollto  clearfix text-center" data-enllax-ratio=".3">
 
                 <div class="row clearfix">
 
                     <div class="section-heading">
                         <h3>FEEDBACK</h3>
-                        <h2 class="section-title">Was meine Hörer sagten</h2>
+                        <h2 class="section-title">Meine kleinen Erfolge</h2>
                     </div>
 
-                    <!--User Testimonial-->
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="images/user-images/user-1.jpg" alt="User" />
-                        <q>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua
-                        </q>
-                        <footer>John Doe - Happy Customer</footer>
-                    </blockquote>
-                    <!-- End of Testimonial-->
-                    <!-- End of Testimonial-->
+                    <div id="image-slider" class="splide" style="height: 50vh; width: auto;">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="images/erfolge01.webp" />
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/erfolge02.webp" />
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/erfolge03.webp" />
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/erfolge04.webp" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
 
                 </div>
 
@@ -362,27 +369,48 @@ foreach ($releases as $release) {
     <script src="js/site.js"></script>
 
     <script>
-    function openModal(release, services) {
-        const elem = document.getElementById("modal-opened");
-        elem.style.display = "flex";
-        document.getElementById("modalTitle").innerHTML = release["title"];
+        function openModal(release, services) {
+            const elem = document.getElementById("modal-opened");
+            elem.style.display = "flex";
+            document.getElementById("modalTitle").innerHTML = release["title"];
 
-        services.forEach(service => {
-            console.log(service["name"] + ": " + service["url"]);
-            document.getElementById(service["name"]).setAttribute("href", service["url"]);
-        });
+            services.forEach(service => {
+                console.log(service["name"] + ": " + service["url"]);
+                document.getElementById(service["name"]).setAttribute("href", service["url"]);
+            });
 
-        //var spotifyItem = services.filter(function(service) { return service["name"] == 'spotify'; });
-        //console.log("spotifyitem: "+services[0]);
-        //document.getElementById("spotifyButton").href = services[0]["url"];
-    }
+            //var spotifyItem = services.filter(function(service) { return service["name"] == 'spotify'; });
+            //console.log("spotifyitem: "+services[0]);
+            //document.getElementById("spotifyButton").href = services[0]["url"];
+        }
 
-    function closeModal(){
-        const elem = document.getElementById("modal-opened");
-        elem.style.display = "none";
-    }
+        function closeModal() {
+            const elem = document.getElementById("modal-opened");
+            elem.style.display = "none";
+        }
 
     </script>
 
 </body>
 </html>
+
+<style>
+    .splide__slide img {
+        width: auto;
+        height: 50vh;
+    }
+</style>
+
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#image-slider').mount();
+    });
+</script>

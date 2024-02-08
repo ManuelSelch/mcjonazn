@@ -23,7 +23,7 @@ foreach ($releases as $release) {
     <meta charset="UTF-8">
 
     <!--Page Title-->
-    <title>McJonazn - Artist Page</title>
+    <title>MCJonazn - Artist Page</title>
 
     <!--Meta Keywords and Description-->
     <meta name="keywords" content="">

@@ -38,7 +38,9 @@ class Scrapper {
         return $releaseItems;
     }
 
-    function getReleases(){
+   
+
+    function loadReleases(){
         $url = "https://music.imusician.pro/_next/data/1WvsHJDLdaGzw4nGwMp_e/en/artist/IrdowlMI2e/releases.json?pid=IrdowlMI2e";
         $json = file_get_contents($url);
         $data = json_decode($json, true);
@@ -66,10 +68,18 @@ class Scrapper {
             $index += 1;
         }
         
+        file_put_contents('releases/releases.json', json_encode($arr));
+
         return $arr;
     }
 
-    function getRelease($key){
+    function getReleases(){
+        $json = file_get_contents('releases/releases.json');
+        $arr = json_decode($json, true);
+        return $arr;
+    }
+
+    function loadRelease($key){
         $url = "https://music-data.imusician.pro/a/".$key."/data.json";
         $json = file_get_contents($url);
         $details = json_decode($json, true);
@@ -82,6 +92,14 @@ class Scrapper {
             ];
         }
 
+        file_put_contents('releases/release_'.$key.'.json', json_encode($arr));
+
+        return $arr;
+    }
+
+    function getRelease($key){
+        $json = file_get_contents('releases/release_'.$key.'.json');
+        $arr = json_decode($json, true);
         return $arr;
     }
 }

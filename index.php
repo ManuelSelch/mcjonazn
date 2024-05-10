@@ -7,15 +7,27 @@ error_reporting(E_ALL);
 require_once("json.php");
 //echo "index";
 $scrapper = new Scrapper();
-$releases = $scrapper->getReleases();
-//var_dump($releases);
 
-/*
-foreach ($releases as $release) {
-    $key = $release["key"];
-    $releaseDetails = $scrapper->getRelease($key);
+if(isset($_GET["reload"])){
+    $scrapper->loadReleases();
 }
-*/
+
+$releases = $scrapper->getReleases();
+
+if(isset($_GET["reload"])){
+    echo "<h1 style='width: 100%; text-align:center;'><a href='https://mcjonazn.de'>Home</a></h1>";
+    echo "<hr><br>";
+    var_dump($releases);
+
+    foreach ($releases as $release) {
+        $scrapper->loadRelease($release["key"]);
+        $release = $scrapper->getRelease($release["key"]);
+        echo "<br><br><hr><br><br>";
+        var_dump($release);
+    }
+}
+
+
 
 ?>
 <html>
@@ -46,7 +58,7 @@ foreach ($releases as $release) {
     <link href="css/animate.css" rel="stylesheet" type="text/css">
 
     <!-- Modal CSS -->
-    <link rel="stylesheet" href="css/modal.css?ttt">
+    <link rel="stylesheet" href="css/modal.css?ffffhhhhhhhhhhhhhhhhhhhh">
 
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -149,16 +161,12 @@ foreach ($releases as $release) {
                     <div class="section-heading">
                         <h1>MCJonazn</h1>
                         <h2>
-                            Nach über einem Jahr Musik machen, release ich ein Album auf allen Streaming Plattformen.
-                            (29.12.)🤩🎵
-                            Nach mehreren Stunden Texte schreiben, aufnehmen und vielen Stunden im Mastering erscheint nach
-                            dem qualitativ niedrigem Album |Der Anfang| nun |Kapitel 2|.
-                            So viel Liebe, Herzblut und ein Großteil meiner Freizeit stecken genau hier drin. 🙏
-                            Egal was passieren wird, nichts außer meine eigene Einstellung und Mindset werden mich
-                            aufhalten. Jeden Monat ein Song ;)🔥
-                            Allein im Vergleich zu letztem Jahr ist eine enorme Steigerung erkennbar. Sei es im Flow, Text,
-                            oder Mastering. Ich bin noch lange kein Profi, aber zumindest jemand mit einem Traum, an dem er
-                            arbeitet, anstatt auf unwichtige Dinge Fokus zu legen.🎶🎧
+                        Hi, ich bin MCJonazn✌️<br>
+                        Bald bin ich schon seit einem Jahr auf allen Streaming Plattformen.🥳<br>
+                        Schon seit Sommer 22 arbeite ich an meiner Musik und seitdem konnte ich viel lernen. <br>
+                        Auf das qualitativ niedrige Album ,,Der Anfang" folgte am 29.12.23 ,,Kapitel 2". Der neueste Release von mir ist ,,Solo". Der letzte Song kam also im Januar, aber ich höre nicht auf!😎 <br>
+                        Ich beschäftige mich mehr mit der technischen Seite meiner Musik und möchte diese stets verbessern, bzw. am Erfolg von meinem Song ,,Solo" anknüpfen können. <br>
+                        Aus diesem Grund dauert der nächste Release noch etwas, aber bis dahin gibts noch viel anderes zu hören😉👇
                         </h2>
                     </div>
 
@@ -213,7 +221,9 @@ foreach ($releases as $release) {
                                 <?php
                                 foreach ($releases as $release) {
                                 $image = $release["image_src"];
+
                                 $services = $scrapper->getRelease($release["key"]);
+                                
                                 ?>
 
                                 <li class="splide__slide">
@@ -331,7 +341,8 @@ foreach ($releases as $release) {
         <footer id="landing-footer" class="clearfix">
             <div style="display: flex; align-items: center;">
 
-                <p id="copyright" class="col-2">Made with love by Manuel & Sebastian ;)</a></p>
+                <p id="copyright" class="col-2">Made with love by Manuel & Sebastian ;) </p>
+                
                 <img src="images/logo-2.png" style="width: 50px;"/>
 
                 <!--Social Icons in Footer-->
@@ -391,12 +402,12 @@ foreach ($releases as $release) {
 
             services.forEach(service => {
                 console.log(service["name"] + ": " + service["url"]);
-                document.getElementById(service["name"]).setAttribute("href", service["url"]);
+                var serviceElement = document.getElementById(service["name"]);
+                if(serviceElement != null){
+                    serviceElement.setAttribute("href", service["url"]);
+                }
+               
             });
-
-            //var spotifyItem = services.filter(function(service) { return service["name"] == 'spotify'; });
-            //console.log("spotifyitem: "+services[0]);
-            //document.getElementById("spotifyButton").href = services[0]["url"];
         }
 
         function closeModal() {

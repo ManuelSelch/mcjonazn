@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  --light: hsl(0, 0%, 100%);
-  --background: linear-gradient(to right bottom, hsl(236, 50%, 50%), hsl(195, 50%, 50%));
+  --light: hsl(0, 0%, 0%);
+  --background: linear-gradient(to right bottom, hsl(0, 0%, 100%), hsl(0, 0%, 90%));
 
   
 
@@ -56,7 +56,7 @@ a:link {
 */
 
 .modal {
-  width: 60rem;
+  width: 80%;
   padding: 4rem 2rem;
   border-radius: .8rem;
 
@@ -66,15 +66,15 @@ a:link {
   position: relative;
 
   overflow: scroll;
-  height: 80%;
+  height: 70%;
 }
 
 .modal__details {
   text-align: center;
 
   margin-bottom: 4rem;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid hsla(0, 0%, 100%, .4);
+  /*padding-bottom: 4rem;*/
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.4);
 }
 
 .modal__title {
@@ -106,7 +106,7 @@ a:link {
 
   width: 18rem;
   height: 18rem;
-  border: 1px solid hsla(0, 0%, 100%, .2);
+  border: 1px solid hsla(0, 0%, 0%, 0.2);
   border-radius: 100rem;
 
   pointer-events: none;
@@ -114,7 +114,7 @@ a:link {
 
 .modal__btn {
   padding: 2rem 1.6rem;
-  border: 1px solid hsla(0, 0%, 100%, .4);
+  border: 1px solid hsla(0, 0%, 0%, 0.4);
   border-radius: 100rem;
 
   color: inherit;
@@ -131,7 +131,7 @@ a:link {
 
 .modal__btn:hover,
 .modal__btn:focus {
-  border-color: hsla(0, 0%, 100%, .6);
+  border-color: hsla(0, 0%, 0%, 0.6);
   transform: translateY(-.2rem);
 }
 
@@ -158,7 +158,7 @@ a:link {
 .link-2 {
   width: 4rem;
   height: 4rem;
-  border: 1px solid hsla(0, 0%, 100%, .4);
+  border: 1px solid hsla(0, 0%, 0%, 0.4);
   border-radius: 100rem;
 
   color: inherit;
@@ -183,7 +183,7 @@ a:link {
 
 .link-2:hover,
 .link-2:focus {
-  border-color: hsla(0, 0%, 100%, .6);
+  border-color: hsla(0, 0%, 0%, 0.6);
   transform: translateY(-.2rem);
 }
 

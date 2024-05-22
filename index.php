@@ -165,15 +165,12 @@ if (isset($_GET["reload"])) {
                 <div class="section-heading">
                     <h1>MCJonazn</h1>
                     <h2>
-                        Hi, ich bin MCJonazn✌️<br>
-                        Bald bin ich schon seit einem Jahr auf allen Streaming Plattformen.🥳<br>
-                        Schon seit Sommer 22 arbeite ich an meiner Musik und seitdem konnte ich viel lernen. <br>
-                        Auf das qualitativ niedrige Album ,,Der Anfang" folgte am 29.12.23 ,,Kapitel 2". Der neueste
-                        Release von mir ist ,,Solo". Der letzte Song kam also im Januar, aber ich höre nicht auf!😎 <br>
-                        Ich beschäftige mich mehr mit der technischen Seite meiner Musik und möchte diese stets
-                        verbessern, bzw. am Erfolg von meinem Song ,,Solo" anknüpfen können. <br>
-                        Aus diesem Grund dauert der nächste Release noch etwas, aber bis dahin gibts noch viel anderes
-                        zu hören😉👇
+                        Hi, ich bin MCJonazn✌️
+                        Ich mache hobbymäßig Musik und das schon seit Sommer 22!
+                        Seit April 23 ist meine Musik auf allen Streamingplattformen verfügbar 👌
+                        Leider war meine Musik noch nicht professionell, weswegen ich nun mit einem Studio zusammenarbeite.
+                        Am 31.05. kommt die nächste und erste professionelle Single ,,Gelernt"!
+                        Ab diesem Zeitpunkt kommt jeden letzten Freitag des jeweiligen Monats ein neuer Song!😉
                     </h2>
                 </div>
 

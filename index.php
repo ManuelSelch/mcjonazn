@@ -341,7 +341,7 @@ if(isset($_GET["reload"])){
         <footer id="landing-footer" class="clearfix">
             <div style="display: flex; align-items: center;">
 
-                <p id="copyright" class="col-2">Made with love by Manuel & Sebastian ;) </p>
+                <p id="copyright" class="col-2">Made with love by Manuel & Sebastian ;-) </p>
                 
                 <img src="images/logo-2.png" style="width: 50px;"/>
 

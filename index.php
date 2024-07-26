@@ -381,10 +381,16 @@ if (isset($_GET["reload"])) {
                 <div class="split">
                     <div class="grid">
                         <div class="playlistCard">
-                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5dfHyOOYsadbdLD1fCEg9l?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5ak8eAeWIODwDED4mMJ3IN?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="playlistCard">
-                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/15JKn7aN7Pra73sYQcMG6y?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/29fcHG4zHKrdSQJ2Fkk7xj?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                        <div class="playlistCard">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2wWCjPv9BAkGeJ1BnmUdLk?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                        <div class="playlistCard">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5FCoIEovmThWmgXUaijyfj?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>

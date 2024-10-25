@@ -84,6 +84,7 @@ class Scrapper {
         $json = file_get_contents($url);
         $details = json_decode($json, true);
         $services = $details["release"]["services"];
+        $arr = [];
         
         foreach ($services as $service) {
             $arr[] = [

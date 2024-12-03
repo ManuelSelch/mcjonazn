@@ -41,7 +41,7 @@ class Scrapper {
    
 
     function loadReleases(){
-        $url = "https://music.imusician.pro/_next/data/nRWvyRXClC_8l7kqPWTZc/en/artist/IrdowlMI2e/releases.json?pid=IrdowlMI2e";
+        $url = "https://music.imusician.pro/_next/data/-fp7jJEKp62wgcmBLV0ZZ/en/artist/IrdowlMI2e.json?pid=IrdowlMI2e";
         $json = file_get_contents($url);
         $data = json_decode($json, true);
         $releases = $data["pageProps"]["data"]["releases"];
